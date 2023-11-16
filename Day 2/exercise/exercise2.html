@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Exercise</title>
+    <style>
+      .container {
+        display: grid;
+        gap: 0.5rem;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas: "nav nav nav nav nav nav";
+      }
+
+      .navbar {
+        background-color: black;
+        grid-column: 1/7;
+      }
+
+      .sidebar {
+        grid-row: 2/10;
+      }
+
+      .footer {
+        background-color: black;
+        grid-column: 1/7;
+        grid-row: 10;
+      }
+
+      .sidebar {
+        background-color: black;
+      }
+
+      .contents {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">navbar</div>
+      <div class="sidebar">sidebar</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="contents">contents</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
