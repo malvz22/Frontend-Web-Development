@@ -9,24 +9,26 @@
         display: grid;
         gap: 0.5rem;
         height: 100vh;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: repeat(10, 1fr);
-        grid-template-areas: "nav nav nav nav nav nav";
       }
 
       .navbar {
         background-color: black;
-        grid-column: 1/7;
+        grid-column: 1 / span 6;
+        color: white;
       }
 
       .sidebar {
         grid-row: 2/10;
+        color: white;
       }
 
       .footer {
         background-color: black;
-        grid-column: 1/7;
+        grid-column: 1 / span 6;
         grid-row: 10;
+        color: white;
       }
 
       .sidebar {
