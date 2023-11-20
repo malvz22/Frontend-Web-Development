@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <script>
+      function updateText() {
+        const element = document.getElementById("myElement");
+        console.log(element.innerText);
+        element.innerHTML = "<h2>Changed Text</h2>";
+      }
+      function addItem() {
+        const newElement = document.createElement("li");
+        newElement.textContent = "New Item";
+
+        const element = document.getElementById("myList");
+        element.appendChild(newElement);
+      }
+      function deleteText() {
+        const element = document.querySelector("#myElement");
+        const parentElement = element.parentNode;
+
+        parentElement.removeChild(element);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1 id="myElement">Original Text</h1>
+      <button onclick="updateText()">Change Text</button>
+      <button onclick="deleteText()">Delete Text</button>
+    </div>
+
+    <hr />
+    <ul id="myList"></ul>
+    <button onclick="addItem()">Add item</button>
+  </body>
+</html>
