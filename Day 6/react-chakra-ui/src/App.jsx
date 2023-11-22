@@ -17,7 +17,7 @@ import "./App.css";
 
 function List(props) {
   return (
-    <Center mb={10}>
+    <Center>
       <Box width="700px">
         <Flex direction="row" justifyContent={"center"}>
           <Checkbox color="white" marginEnd={12} size={"lg"}></Checkbox>
@@ -47,16 +47,18 @@ function List(props) {
 function App() {
   return (
     <>
-      <Box bg="#1A202C" py={10}>
+      <Box w={"1200px"} bg="#1A202C" py={10} m={"auto"}>
         <Heading textColor="white" textAlign={"center"} py={10}>
           Chores ToDo List
         </Heading>
 
-        <List text="Create Guest Experience mobile check in" />
-        <List text="Document current CI/CD process" />
-        <List text="Perform Code review for final Pillow-talk release" />
-        <List text="Fix image uploading process for guest check-in" />
-        <List text="Provide on-boarding documentation" />
+        <Stack spacing={10} mb={10}>
+          <List text="Create Guest Experience mobile check in" />
+          <List text="Document current CI/CD process" />
+          <List text="Perform Code review for final Pillow-talk release" />
+          <List text="Fix image uploading process for guest check-in" />
+          <List text="Provide on-boarding documentation" />
+        </Stack>
 
         <Divider />
 
@@ -66,12 +68,7 @@ function App() {
         <Center>
           <Stack>
             <Text color={"white"}>Add todo</Text>
-            <Input
-              placeholder="Test"
-              _placeholder={{ color: "white" }}
-              size="lg"
-              width={"700px"}
-            />
+            <Input bg={"white"} placeholder="large size" size="lg" />
             <Button color={"black"} colorScheme="blue" width={40}>
               ADD TASK
             </Button>
