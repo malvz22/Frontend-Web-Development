@@ -1,0 +1,34 @@
+{
+  "superheroes": [
+    {
+      "id": 1,
+      "name": "Batman",
+      "color": "Black"
+    },
+    {
+      "id": 2,
+      "name": "Superman",
+      "color": "Blue"
+    },
+    {
+      "id": 3,
+      "name": "Spider-Man",
+      "color": "Red"
+    },
+    {
+      "name": "Blade",
+      "color": "Red",
+      "id": 4
+    },
+    {
+      "name": "Invoker",
+      "color": "Purple",
+      "id": 5
+    },
+    {
+      "name": "Capt. America",
+      "color": "Blue Red",
+      "id": 6
+    }
+  ]
+}
